@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:wd_store/page/order_page.dart';
 
-import '../api/wd_api.dart';
+import '../api/wd_net.dart';
 import '../bus/eventy/tab_eventy.dart';
 import '../entity/status_count_entity.dart';
 import '../bus/event_bus.dart';
@@ -61,7 +61,7 @@ class _OrderTabPageState extends State<OrderTabPage>
   StatusCountEntity? statusCount;
 
   Future _getStatusCount() async {
-    var countData = await WdApi.getStatusCount();
+    var countData = await WdNet.getStatusCount();
     if (countData != null) {
       setState(() {
         statusCount = countData;

@@ -8,7 +8,7 @@ import '../main.dart';
 import '../utils/loading_util.dart';
 import '../utils/log_util.dart';
 import '../utils/toast_util.dart';
-import 'net_api.dart';
+import '../api/net_api.dart';
 @Deprecated("replaced HttpUtil")
 class HttpUtil {
   static late HttpUtil instance;

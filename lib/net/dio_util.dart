@@ -7,7 +7,7 @@ import 'package:wd_store/utils/log_util.dart';
 
 import '../entity/respon_entity.dart';
 import '../utils/sp_util.dart';
-import 'net_api.dart';
+import '../api/net_api.dart';
 import 'interceptor/auth_interceptor.dart';
 import 'interceptor/custom_transformer.dart';
 

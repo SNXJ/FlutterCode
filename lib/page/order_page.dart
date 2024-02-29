@@ -6,7 +6,7 @@ import 'package:wd_store/utils/style_util.dart';
 import 'package:wd_store/utils/toast_util.dart';
 import 'package:wd_store/widget/common_no_data.dart';
 
-import '../api/wd_api.dart';
+import '../api/wd_net.dart';
 import '../widget/custom_appbar.dart';
 
 class OrderPage extends StatefulWidget {
@@ -57,7 +57,7 @@ class _OrderPageState extends State<OrderPage>
   Future _getOrderData(int page, bool show) async {
     OrderRequest orderRequest = OrderRequest(
         orderStatus: orderStatusStr[widget.index! + 1], current: page);
-    var orderResponse = await WdApi.getOrderPage(orderRequest, show);
+    var orderResponse = await WdNet.getOrderPage(orderRequest, show);
     // if (orderResponse != null) {
     //   setState(() {
     //     orderList = orderResponse?.records;

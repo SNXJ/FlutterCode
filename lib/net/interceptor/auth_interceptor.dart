@@ -9,7 +9,7 @@ import 'package:wd_store/utils/sp_util.dart';
 
 import '../../main.dart';
 import '../../utils/log_util.dart';
-import '../net_api.dart';
+import '../../api/net_api.dart';
 
 class AuthInterceptor extends QueuedInterceptorsWrapper {
   final Dio tokenDio;

@@ -9,10 +9,10 @@ import 'package:wd_store/page/switch_page.dart';
 import 'package:wd_store/utils/toast_util.dart';
 import 'package:wd_store/widget/custom_appbar.dart';
 
-import '../api/wd_api.dart';
+import '../api/wd_net.dart';
 import '../entity/login_data_entity.dart';
 import '../entity/request/login_request.dart';
-import '../net/net_api.dart';
+import '../api/net_api.dart';
 import '../net/dio_util.dart';
 import '../net/http_util.dart';
 import '../utils/sp_util.dart';
@@ -127,7 +127,7 @@ class _LoginPageState extends State<LoginPage> {
 
   Future getLoginInfo0(String mobile, String pwd) async {
     var loginRequest = LoginRequest(userName: "aabbocd", password: "123456");
-    var loginData=await WdApi.getLogin(loginRequest);
+    var loginData=await WdNet.getLogin(loginRequest);
     if (loginData?.accessToken != null) {
       SPUtil().setString("token", loginData?.accessToken);
       SPUtil().setString("refreshToken", loginData?.refreshToken);

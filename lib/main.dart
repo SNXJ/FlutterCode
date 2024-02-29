@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_easyloading/flutter_easyloading.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:wd_store/net/net_api.dart';
+import 'package:wd_store/api/net_api.dart';
 import 'package:wd_store/router/wd_router.dart';
 import 'package:wd_store/utils/env_config.dart';
 import 'package:wd_store/utils/sp_util.dart';

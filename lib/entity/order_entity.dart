@@ -539,7 +539,7 @@ class SkuItemInfoList {
   String? availableRefundPrice;
   String? refundPrice;
   double? oriPrice;
-  String? costPrice;
+  double? costPrice;
   double? changePrice;
   double? maxOutChangePrice;
   double? accPrice;

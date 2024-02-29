@@ -1,6 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:wd_store/page/order_all_page.dart';
 import 'package:wd_store/page/order_page.dart';
 
 import '../widget/custom_appbar.dart';
@@ -25,7 +26,7 @@ class _HomePageState extends State<HomePage>
 
   final Map<int, Widget> _children = {
     0: const OrderTabPage(),
-    1: const OrderPage(-1),
+    1: const OrderAllPage(),
   };
 
   @override
